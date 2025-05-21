@@ -1,3 +1,3 @@
 # clone-tabnews
 
-Do Zero ao Sucesso: Os Primeiros Passos no Aprendizado de um Novo Projeto
+Do Zero ao Sucesso: Os Primeiros Passos de um Novo Projeto
