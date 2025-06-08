@@ -1,7 +1,7 @@
 {
   "name": "tabnews",
   "version": "1.0.0",
-  "description": "",
+  "description": "# 💻 Projeto Web com JavaScript, Testes Automatizados e Gerenciamento via GitHub",
   "main": "index.js",
   "scripts": {
     "dev": "npm run services:up && next dev",
@@ -28,5 +28,8 @@
     "jest": "^29.6.2",
     "node-mocks-http": "^1.17.2",
     "prettier": "^3.5.3"
+  },
+  "directories": {
+    "test": "test"
   }
 }
