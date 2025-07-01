@@ -1,4 +1,5 @@
 import { Client } from "pg";
+
 async function query(queryObject) {
   const client = new Client({
     host: process.env.POSTGRES_HOST,
@@ -7,6 +8,7 @@ async function query(queryObject) {
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASSWORD,
   });
+
   await client.connect();
 
   try {
@@ -15,10 +17,10 @@ async function query(queryObject) {
   } catch (error) {
     console.error(error);
   } finally {
-    await client.end();
+    await client.end(); // sempre fecha a conexão
   }
 }
 
 export default {
-  query: query,
+  query,
 };
