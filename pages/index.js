@@ -94,25 +94,9 @@ export default function Home() {
           <p>
             Email: <a href="mailto:seuemail@mail.com">blinodev@gmail.com</a>
           </p>
+
           <p>
-            LinkedIn:{" "}
-            <a
-              href="https://linkedin.com/in/seulinkedin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/linoj
-            </a>
-          </p>
-          <p>
-            GitHub:{" "}
-            <a
-              href="https://github.com/seuusuario"
-              target="_blank"
-              rel="noreferrer"
-            >
-              github.com/blinodev
-            </a>
+            Cell: <a href="tel:+5591999999999">+55 (91) 99999-9999</a>
           </p>
         </section>
       </main>
