@@ -1,44 +1,133 @@
-function Home() {
+export default function Home() {
   return (
     <div
       style={{
         fontFamily: "Arial, sans-serif",
-        padding: "40px",
-        textAlign: "center",
+        backgroundColor: "#f9f9f9",
+        color: "#333",
+        margin: 0,
+        padding: 0,
       }}
     >
-      <h1>🔬 Data Science Hub</h1>
-      <p>
-        Bem-vindo ao meu site de Data Science! Aqui você encontra conteúdos
-        sobre análise de dados, estatística, machine learning e inteligência
-        artificial.
-      </p>
-
-      <h2>📊 O que você vai aprender:</h2>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li>✅ Python para Data Science</li>
-        <li>✅ Visualização de Dados</li>
-        <li>✅ Machine Learning</li>
-        <li>✅ Inteligência Artificial</li>
-      </ul>
-
-      <button
+      {/* Cabeçalho */}
+      <header
         style={{
-          marginTop: "20px",
-          padding: "10px 20px",
-          fontSize: "16px",
-          cursor: "pointer",
-          borderRadius: "8px",
-          border: "none",
           backgroundColor: "#0070f3",
           color: "white",
+          padding: "40px",
+          textAlign: "center",
         }}
-        onClick={() => alert("Obrigado pelo joinha! 🚀")}
       >
-        👍 Dar um joinha
-      </button>
+        <h1>🔬 Portfólio de Data Science</h1>
+        <p>Transformando dados em insights</p>
+      </header>
+
+      <main style={{ padding: "40px", maxWidth: "900px", margin: "auto" }}>
+        {/* Seção Sobre */}
+        <section style={{ marginBottom: "50px" }}>
+          <h2>👋 Sobre mim</h2>
+          <p>
+            Olá! Eu sou <strong>[Seu Nome]</strong>, Cientista de Dados
+            apaixonado por análise, machine learning e visualização de
+            informações para gerar valor real.
+          </p>
+        </section>
+
+        {/* Projetos */}
+        <section style={{ marginBottom: "50px" }}>
+          <h2>📊 Projetos</h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gap: "20px",
+            }}
+          >
+            <div
+              style={{
+                background: "white",
+                padding: "20px",
+                borderRadius: "10px",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              }}
+            >
+              <h3>📈 Análise de Vendas</h3>
+              <p>Dashboard interativo para entender padrões de consumo.</p>
+            </div>
+            <div
+              style={{
+                background: "white",
+                padding: "20px",
+                borderRadius: "10px",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              }}
+            >
+              <h3>🖼️ Classificação de Imagens</h3>
+              <p>Modelo de deep learning para identificar objetos.</p>
+            </div>
+            <div
+              style={{
+                background: "white",
+                padding: "20px",
+                borderRadius: "10px",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              }}
+            >
+              <h3>📉 Séries Temporais</h3>
+              <p>Predição de demanda usando ARIMA e LSTM.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Habilidades */}
+        <section style={{ marginBottom: "50px" }}>
+          <h2>🛠️ Habilidades</h2>
+          <p>
+            Python, Pandas, NumPy, Scikit-learn, TensorFlow, SQL, Power BI,
+            Estatística, Machine Learning, Visualização de Dados.
+          </p>
+        </section>
+
+        {/* Contato */}
+        <section>
+          <h2>📬 Contato</h2>
+          <p>
+            Email: <a href="mailto:seuemail@email.com">seuemail@email.com</a>
+          </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://linkedin.com/in/seulinkedin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/seulinkedin
+            </a>
+          </p>
+          <p>
+            GitHub:{" "}
+            <a
+              href="https://github.com/seuusuario"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/seuusuario
+            </a>
+          </p>
+        </section>
+      </main>
+
+      {/* Rodapé */}
+      <footer
+        style={{
+          textAlign: "center",
+          padding: "20px",
+          backgroundColor: "#eee",
+          marginTop: "40px",
+        }}
+      >
+        © {new Date().getFullYear()} - Portfólio de Data Science
+      </footer>
     </div>
   );
 }
-
-export default Home;
