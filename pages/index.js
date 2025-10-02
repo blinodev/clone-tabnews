@@ -18,7 +18,7 @@ export default function Home() {
           textAlign: "center",
         }}
       >
-        <h1>🔬 Portfólio de Data Science</h1>
+        <h1>🔬 A X L Data</h1>
         <p>Transformando dados em insights</p>
       </header>
 
@@ -27,7 +27,7 @@ export default function Home() {
         <section style={{ marginBottom: "50px" }}>
           <h2>👋 Sobre mim</h2>
           <p>
-            Olá! Eu sou <strong>[Lino]</strong>, Engenheiro Cientista de Dados
+            Sejam Bem vindo <strong> A-X-L Data</strong>, Cientista de Dados
             apaixonado por análise, machine learning e visualização de
             informações para gerar valor real.
           </p>
@@ -92,7 +92,7 @@ export default function Home() {
         <section>
           <h2>📬 Contato</h2>
           <p>
-            Email: <a href="mailto:seuemail@email.com">seuemail@email.com</a>
+            Email: <a href="mailto:blinodev@gmail.com">seuemail@email.com</a>
           </p>
           <p>
             LinkedIn:{" "}
@@ -101,7 +101,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              linkedin.com/in/seulinkedin
+              linkedin.com/in/linoj
             </a>
           </p>
           <p>
@@ -111,7 +111,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              github.com/seuusuario
+              github.com/blinodev
             </a>
           </p>
         </section>
@@ -126,7 +126,7 @@ export default function Home() {
           marginTop: "40px",
         }}
       >
-        © {new Date().getFullYear()} - Portfólio de Data Science
+        © {new Date().getFullYear()} - Portfólio A-X-L Data
       </footer>
     </div>
   );
