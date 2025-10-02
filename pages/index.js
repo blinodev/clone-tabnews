@@ -25,7 +25,7 @@ export default function Home() {
       <main style={{ padding: "40px", maxWidth: "900px", margin: "auto" }}>
         {/* Seção Sobre */}
         <section style={{ marginBottom: "50px" }}>
-          <h2>👋 Sobre mim</h2>
+          <h2>👋 Consultoria</h2>
           <p>
             Sejam Bem vindo <strong> A-X-L Data</strong>, Cientista de Dados
             apaixonado por análise, machine learning e visualização de
@@ -92,7 +92,7 @@ export default function Home() {
         <section>
           <h2>📬 Contato</h2>
           <p>
-            Email: <a href="mailto:blinodev@gmail.com">seuemail@email.com</a>
+            Email: <a href="mailto:seuemail@mail.com">blinodev@gmail.com</a>
           </p>
           <p>
             LinkedIn:{" "}
@@ -126,7 +126,7 @@ export default function Home() {
           marginTop: "40px",
         }}
       >
-        © {new Date().getFullYear()} - Portfólio A-X-L Data
+        © {new Date().getFullYear()} - A-X-L Data
       </footer>
     </div>
   );
