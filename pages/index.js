@@ -27,7 +27,7 @@ export default function Home() {
         <section style={{ marginBottom: "50px" }}>
           <h2>👋 Sobre mim</h2>
           <p>
-            Olá! Eu sou <strong>[Seu Nome]</strong>, Cientista de Dados
+            Olá! Eu sou <strong>[Lino]</strong>, Engenheiro Cientista de Dados
             apaixonado por análise, machine learning e visualização de
             informações para gerar valor real.
           </p>
