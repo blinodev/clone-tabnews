@@ -91,23 +91,33 @@ export default function Home() {
         {/* Contato */}
         <section>
           <h2>📬 Contato</h2>
+
+          {/* Telefone atualizado */}
           <p>
-            Email: <a href="mailto:blinodev@gmail.com">seuemail@email.com</a>
+            📱 Celular:{" "}
+            <a href="tel:+5548992465508">(48) 99246-5508</a>
           </p>
+
+          <p>
+            Email:{" "}
+            <a href="mailto:blinodev@gmail.com">blinodev@gmail.com</a>
+          </p>
+
           <p>
             LinkedIn:{" "}
             <a
-              href="https://linkedin.com/in/seulinkedin"
+              href="https://linkedin.com/in/linoj"
               target="_blank"
               rel="noreferrer"
             >
               linkedin.com/in/linoj
             </a>
           </p>
+
           <p>
             GitHub:{" "}
             <a
-              href="https://github.com/seuusuario"
+              href="https://github.com/blinodev"
               target="_blank"
               rel="noreferrer"
             >
