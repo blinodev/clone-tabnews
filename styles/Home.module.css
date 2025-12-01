@@ -1,26 +1,3 @@
-:global(:root){
-  --bg-primary: #0D1B2A;
-  --bg-secondary: #1B263B;
-  --text-primary: #FFFFFF;
-  --text-secondary: #E0E0E0;
-  --accent-blue: #00B4D8;
-  --accent-purple: #7209B7;
-  --text-dark: #000000;
-}
-
-:global([data-theme='light']){
-  --bg-primary: #f9f9f9;
-  --bg-secondary: #ffffff;
-  --text-primary: #111827;
-  --text-secondary: #374151;
-}
-
-:global(*) {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* Navigation */
 .nav {
   position: fixed;
@@ -220,5 +197,3 @@
   border: 4px solid rgba(0,180,216,0.18);
   box-shadow: 0 20px 60px rgba(0,0,0,0.45);
 }
-
-/* (O RESTO DO ARQUIVO CONTINUA SEM ALTERAÇÕES — ELE É VÁLIDO EM CSS MODULES) */

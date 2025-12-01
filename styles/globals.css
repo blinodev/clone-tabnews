@@ -1,4 +1,8 @@
-:global(:root) {
+/* ============================= */
+/*        VARIÁVEIS GLOBAIS      */
+/* ============================= */
+
+:root {
   --bg-primary: #0D1B2A;
   --bg-secondary: #1B263B;
   --text-primary: #FFFFFF;
@@ -8,14 +12,15 @@
   --text-dark: #000000;
 }
 
-:global([data-theme='light']) {
+[data-theme='light'] {
   --bg-primary: #f9f9f9;
   --bg-secondary: #ffffff;
   --text-primary: #111827;
   --text-secondary: #374151;
 }
 
-:global(*) {
+/* Reset global */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
