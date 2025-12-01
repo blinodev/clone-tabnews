@@ -10,6 +10,8 @@ import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
+import '../styles/globals.css';
+
 
 export default function Home() {
   // dark mode state (hydration-safe)

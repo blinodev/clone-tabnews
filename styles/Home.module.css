@@ -21,14 +21,6 @@
   padding: 0;
 }
 
-/* A partir daqui tudo é local e permitido */
-.app {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  min-height: 100vh;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-
 /* Navigation */
 .nav {
   position: fixed;
