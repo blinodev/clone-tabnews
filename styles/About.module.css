@@ -1,0 +1,31 @@
+.aboutContent {
+  background: var(--bg-secondary);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.aboutContent p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.highlightPurple {
+  color: var(--accent-purple);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 30px;
+  }
+}

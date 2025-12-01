@@ -1,28 +1,46 @@
-// ========== File: components/Hero.js ==========
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Hero.module.css";
 
 export default function Hero() {
   return (
     <section id="home" className={styles.hero}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.gradientTitle}>Analista Data Science Analytics</h1>
-            <h2 className={styles.subtitle}>Especialista em Machine Learning | Python | SQL | Excel e Power BI</h2>
-            <p className={styles.heroTagline}>Transformando dados em decisões estratégicas que geram resultados reais</p>
-            <p className={styles.heroSubtitle}>Análises precisas, estratégias inteligentes e impacto mensurável para sua empresa</p>
-
+            <h1>Analista de Dados</h1>
+            <h2>
+              Especialista em Machine Learning | Python | SQL | Excel e Power BI
+            </h2>
+            <p className={styles.heroTagline}>
+              Transformando dados em decisões estratégicas que geram resultados
+              reais
+            </p>
+            <p className={styles.heroSubtitle}>
+              Análises precisas, estratégias inteligentes e impacto mensurável
+              para sua empresa
+            </p>
             <div className={styles.heroButtons}>
-              <a className={styles.btnPrimary} href="https://api.whatsapp.com/send/?phone=5548992465508&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">💬 Entre em Contato</a>
-              <a className={styles.btnOutline} href="#projetos">Ver Projetos</a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=5548992465508&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                💬 Entre em Contato
+              </a>
+              <a href="#projetos" className="btn-outline">
+                Ver Projetos
+              </a>
             </div>
           </div>
-
           <div className={styles.heroImage}>
-            <img src="https://i.ibb.co/HDKJ0Wc/1733408686458.jpg" alt="Janes Barros Lino" className={styles.profileImg} />
+            <img
+              src="https://i.ibb.co/pBBKCysF/jan.jpg"
+              alt="Lino J."
+              className={styles.profileImg}
+            />
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

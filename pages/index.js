@@ -1,52 +1,66 @@
-// ========== File: pages/index.js ==========
-import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import Nav from '../components/Nav'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import Testimonials from '../components/Testimonials'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
-import '../styles/globals.css';
-
+import { useEffect } from "react";
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
 
 export default function Home() {
-  // dark mode state (hydration-safe)
-  const [dark, setDark] = useState(false)
-
   useEffect(() => {
-    const saved = typeof window !== 'undefined' && localStorage.getItem('axl-dark')
-    if (saved) setDark(saved === 'true')
-  }, [])
+    // Smooth scroll functionality
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light')
-    localStorage.setItem('axl-dark', dark)
-  }, [dark])
+    smoothScrollLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    // Close menu when clicking outside
+    const handleClickOutside = (e) => {
+      const nav = document.querySelector("nav");
+      const navLinks = document.querySelector(".navLinks");
+
+      if (
+        navLinks &&
+        navLinks.classList.contains("active") &&
+        !nav.contains(e.target)
+      ) {
+        navLinks.classList.remove("active");
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    // Cleanup
+    return () => {
+      smoothScrollLinks.forEach((link) => {
+        link.removeEventListener("click", () => {});
+      });
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <>
-      <Head>
-        <title>A-X-L Data | Janes Barros Lino</title>
-        <meta name="description" content="Janes Barros Lino - Analista de Dados, especialista em Machine Learning, Power BI, Python e SQL." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
-      <div className={styles.app}>
-        <Nav dark={dark} setDark={setDark} />
-        <main className={styles.main}>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Testimonials />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </>
-  )
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Testimonials />
+      <Contact />
+    </Layout>
+  );
 }
