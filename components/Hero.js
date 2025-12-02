@@ -12,11 +12,11 @@ export default function Hero() {
             </h2>
             <p className={styles.heroTagline}>
               Transformando dados em decisões estratégicas que geram resultados
-              reais
+              reais.
             </p>
             <p className={styles.heroSubtitle}>
               Análises precisas, estratégias inteligentes e impacto mensurável
-              para sua empresa
+              para sua empresa.
             </p>
             <div className={styles.heroButtons}>
               <a
@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
           <div className={styles.heroImage}>
             <img
-              src="https://i.ibb.co/pBBKCysF/jan.jpg"
+              src="https://i.ibb.co/fzTBR429/logo.png"
               alt="Lino J."
               className={styles.profileImg}
             />

@@ -1,17 +1,23 @@
+import Image from "next/image";
 import styles from "../styles/Footer.module.css";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
+        {/* Marca + Logo */}
         <div className={styles.footerBrand}>
-          <h3>A-X-L Data</h3>
+          <div className={styles.brandRow}>
+            <h3>A-X-L Data</h3>
+          </div>
+
           <p>
             Transformando dados em decisões estratégicas que geram resultados
             reais.
           </p>
         </div>
 
+        {/* Links Rápidos */}
         <div>
           <h4>Links Rápidos</h4>
           <ul className={styles.footerLinks}>
@@ -33,6 +39,7 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Contatos */}
         <div>
           <h4>Contato</h4>
           <ul className={styles.footerLinks}>

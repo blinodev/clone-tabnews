@@ -14,6 +14,9 @@ export default function Home() {
 
     smoothScrollLinks.forEach((link) => {
       link.addEventListener("click", function (e) {
+        // Se o link é para uma âncora externa (como WhatsApp), não faz scroll
+        if (this.getAttribute("href").includes("http")) return;
+
         e.preventDefault();
         const targetId = this.getAttribute("href");
         if (targetId === "#") return;
@@ -31,18 +34,32 @@ export default function Home() {
     // Close menu when clicking outside
     const handleClickOutside = (e) => {
       const nav = document.querySelector("nav");
-      const navLinks = document.querySelector(".navLinks");
+      // Usando o atributo de estilo do StyleX para identificar o menu
+      const navLinks = nav?.querySelector("ul");
 
       if (
         navLinks &&
-        navLinks.classList.contains("active") &&
+        navLinks.style.display === "flex" &&
         !nav.contains(e.target)
       ) {
-        navLinks.classList.remove("active");
+        // Reseta o estilo para esconder o menu
+        navLinks.style.display = "";
       }
     };
 
     document.addEventListener("click", handleClickOutside);
+
+    // Scroll effect para navbar
+    const handleScroll = () => {
+      const nav = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        nav.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.5)";
+      } else {
+        nav.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.3)";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup
     return () => {
@@ -50,6 +67,7 @@ export default function Home() {
         link.removeEventListener("click", () => {});
       });
       document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

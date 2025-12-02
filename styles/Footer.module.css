@@ -52,3 +52,19 @@
 .footerBottom p:last-child {
   margin-top: 10px;
 }
+
+.brandTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inlineLogo {
+  display: inline-block;
+}
+
+.brandInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
