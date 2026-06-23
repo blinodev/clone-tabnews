@@ -27,7 +27,7 @@ export default function Home() {
             top: targetElement.offsetTop - 80,
             behavior: "smooth",
           });
-        }
+        }cd
       });
     });
 

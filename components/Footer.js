@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:blinodev@gmail.com">✉️ blinodev@gmail.com</a>
+              <a href="mailto:janeslino@axldata.com.br">✉️ janeslino@axldata.com.br</a>
             </li>
             <li>
               <a

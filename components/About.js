@@ -5,41 +5,22 @@ export default function About() {
     <section id="sobre">
       <div className="container">
         <h2 className="section-title">
-          Sobre <span>Mim</span>
+          Quem <span>somos</span>
         </h2>
         <div className="title-underline"></div>
         <div className={styles.aboutContent}>
           <p>
-            Sou <span className={styles.highlight}>Janes Barros Lino</span>,
-            Analista de Dados com mais de 15 anos de experiência transformando
-            informações em decisões estratégicas. Minha trajetória combina
-            conhecimento técnico sólido e visão de negócio, permitindo criar
-            soluções de análise que realmente impactam resultados.
-          </p>
-          <p>
-            Sou graduado em{" "}
-            <span className={styles.highlightPurple}>Engenharia Telecom</span>,
-            pós-graduado em{" "}
-            <span className={styles.highlightPurple}>Ciência de Dados</span> e
-            <span className={styles.highlightPurple}> Gestão de Projetos</span>{" "}
-            — formações que me capacitam a unir tecnologia, estratégia e
-            inovação em cada projeto.
-          </p>
-          <p>
-            Ao longo da minha carreira, desenvolvi dashboards e relatórios que
-            potencializaram o desempenho de equipes, otimizaram processos e
-            revelaram oportunidades ocultas para empresas de diferentes setores.
-            Domino ferramentas como{" "}
             <span className={styles.highlight}>
-              Excel, Power BI e Inteligência Artificial
+             A-X-L Data </span>é uma empresa orientada por dados, especializada em Engenharia de Dados, Ciência de Dados e Gestão de Projetos. Atuamos com soluções em análise avançada, inteligência artificial e machine learning, desenvolvendo produtos e processos que apoiam a tomada de decisão baseada em evidências.          </p>
+          <p>
+            Contamos com expertise em <span className={styles.highlight}> Excel, Power BI e IA aplicada,</span> atuando desde a coleta e modelagem até a visualização e comunicação de insights. Nosso compromisso é transformar dados em valor real, combinando excelência técnica, inovação e foco em resultados para impulsionar o crescimento sustentável dos nossos clientes.          </p>
+          <p>
+           <span className={styles.highlight}>
+              
             </span>{" "}
-            aplicada à análise de dados, com habilidades que vão da modelagem e
-            visualização até a comunicação clara de insights para públicos
-            técnicos e executivos.
-          </p>
-          <p className={styles.highlight}>
-            Meu compromisso é transformar dados em valor real para o negócio,
-            unindo técnica, criatividade e foco em resultados.
+                      </p>
+          <p>
+            Nosso compromisso é transformar dados em valor real para os negócios, combinando excelência técnica, inovação e foco em resultados para apoiar decisões mais inteligentes e impulsionar o crescimento sustentável de nossos clientes.
           </p>
         </div>
       </div>

@@ -10,9 +10,9 @@ const contactMethods = [
   },
   {
     label: "E-mail",
-    value: "blinodev@gmail.com",
+    value: "janeslino@axldata.com.br",
     icon: "✉️",
-    link: "mailto:blinodev@gmail.com",
+    link: "mailto:janeslino@axldata.com.br",
     primary: false,
   },
   {
