@@ -10,9 +10,9 @@ const contactMethods = [
   },
   {
     label: "E-mail",
-    value: "janeslino@axldata.com.br",
+    value: "contato@axldata.com.br",
     icon: "✉️",
-    link: "mailto:janeslino@axldata.com.br",
+    link: "mailto:contato@axldata.com.br",
     primary: false,
   },
   {
@@ -24,7 +24,7 @@ const contactMethods = [
   },
   {
     label: "LinkedIn",
-    value: "Lino J",
+    value: "Blino",
     icon: "💼",
     link: "https://www.linkedin.com/in/linoj/",
     primary: false,
